@@ -1,3 +1,13 @@
+import { HeaderContainer } from './styles'
+
 export function Header() {
-  return <h1>Header</h1>
+  return (
+    <HeaderContainer>
+      <span>logo</span>
+      <nav>
+        <a href="">timer</a>
+        <a href="">history</a>
+      </nav>
+    </HeaderContainer>
+  )
 }
