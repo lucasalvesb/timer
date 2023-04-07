@@ -1,18 +1,20 @@
+import { Play } from "phosphor-react";
+
 export function Home() {
   return (
     <div>
       <form action="">
-        <label htmlFor="task">Vou trabalhar em </label>
-        <input id="task" />
+        <div>
+          <label htmlFor="task">Vou trabalhar em </label>
+          <input id="task" />
 
-        <label htmlFor="">durante</label>
-        <input
-          type="number"
-          id="minutesAmount"
-        />
-
+          <label htmlFor="">durante</label>
+          <input
+            type="number"
+            id="minutesAmount"
+          />
+        </div>
         <span>minutos.</span>
-
         <div>
           <span>0</span>
           <span>0</span>
@@ -20,7 +22,10 @@ export function Home() {
           <span>0</span>
           <span>0</span>
         </div>
-        <button type="submit"></button>
+        <button type="submit">
+          <Play size={24} />
+          Começar
+        </button>
       </form>
     </div>
   )
